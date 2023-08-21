@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+    </head>
+    <body>
+        <div id="calculator">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="4">
+                            <span id="total-text">0</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><button onclick="handleAllClear()">AC</button></td>
+                        <td><button onclick="handleClearEntry()">CE</button></td>
+                        <td><button onclick="handleAction('/')">/</button></td>
+                        <td><button onclick="handleAction('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="handleNumber(7)">7</button></td>
+                        <td><button onclick="handleNumber(8)">8</button></td>
+                        <td><button onclick="handleNumber(9)">9</button></td>
+                        <td><button onclick="handleAction('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="handleNumber(4)">4</button></td>
+                        <td><button onclick="handleNumber(5)">5</button></td>
+                        <td><button onclick="handleNumber(6)">6</button></td>
+                        <td><button onclick="handleAction('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="handleNumber(1)">1</button></td>
+                        <td><button onclick="handleNumber(2)">2</button></td>
+                        <td><button onclick="handleNumber(3)">3</button></td>
+                        <td rowspan="2"><button onclick="handleEqual()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button onclick="handleNumber(0)">0</button></td>
+                        <td><button onclick="handleNumber('.')">.</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>        
+        <script src="./calculator.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
